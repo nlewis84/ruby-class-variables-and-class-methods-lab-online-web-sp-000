@@ -29,9 +29,9 @@ class Song
   end
   
   def self.genre_count
-  Song.genres.each do |genre|
-    @genre_totals += { genre: @@genres.count(genre) }
-    @genre_totals
+    Song.genres.each do |genre|
+      @genre_totals += { genre: @@genres.count(genre) }
+      @genre_totals
+    end
   end
-    
 end
