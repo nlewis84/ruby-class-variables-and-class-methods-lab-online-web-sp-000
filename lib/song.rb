@@ -4,37 +4,5 @@ def Song
   attr_accessor :name, :artist, :genre
   
   binding.pry
-  
-  @@count = 0
-  @@artists = []
-  @@genres = []
-  @@genre_count = {}
-  
-  def initialize(name, artist, genre)
-    @name = name
-    @artist = artist
-    @genre = genre
-    @@count += 1
-    @@artists << artist
-    @@genres << genre
-  end
-  
-  def self.count
-    @@count
-  end
-  
-  def self.artists
-    @@artists
-    @@artists.uniq
-  end
-  
-  def self.genres
-    @@genres      
-    @@genres.uniq
-  end
-  
-  def self.genre_count
-    binding.pry
-  end
     
 end
