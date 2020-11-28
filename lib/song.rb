@@ -30,5 +30,3 @@ Class Song
     @@genres      
     @@genres.uniq
   end
-  
-end
