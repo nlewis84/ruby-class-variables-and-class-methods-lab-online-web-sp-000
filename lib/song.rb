@@ -8,7 +8,5 @@ def Song
     @artist = artist
     @genre = genre
   end
-  
-  binding.pry
     
 end
