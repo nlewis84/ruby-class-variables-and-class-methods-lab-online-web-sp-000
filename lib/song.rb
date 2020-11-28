@@ -6,6 +6,11 @@ def Song
   @@song_count = 0
   @@all_artists = []
   
+  def initialize(artist)
+    @@song_count += 1
+    @@all_artists << artist
+  end
+  
   def self.count
     @@song_count
   end
