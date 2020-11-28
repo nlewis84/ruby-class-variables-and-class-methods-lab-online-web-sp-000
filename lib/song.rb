@@ -3,6 +3,8 @@ require 'pry'
 def Song
   attr_accessor :name, :artist, :genre
   
+  binding.pry
+  
   @@count = 0
   @@artists = []
   @@genres = []
