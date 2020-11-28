@@ -3,21 +3,27 @@ require 'pry'
 def Song
   attr_accessor :name, :artist, :genre
   
-  @@song_count = 0
-  @@all_artists = []
+  @@count = 0
+  @@artists = []
+  @@genres = []
   
   def initialize(name, artist, genre)
-    @@song_count += 1
-    @@all_artists << artist
-    @@all_artists.uniq
+    @@count += 1
+    @@artists << artist
+    @@artists.uniq
+    @@genres << genre
   end
   
   def self.count
-    @@song_count
+    @@count
   end
   
-  def self.all_artists
-    @@all_artists
+  def self.artists
+    @@artists
+  end
+  
+  def self.genres
+    @@genres
   end
     
 end
