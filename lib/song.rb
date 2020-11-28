@@ -9,6 +9,7 @@ def Song
   def initialize(artist)
     @@song_count += 1
     @@all_artists << artist
+    @@all_artists.uniq
   end
   
   def self.count
