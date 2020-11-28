@@ -6,7 +6,7 @@ def Song
   @@song_count = 0
   @@all_artists = []
   
-  def initialize(artist)
+  def initialize(name, artist, genre)
     @@song_count += 1
     @@all_artists << artist
     @@all_artists.uniq
