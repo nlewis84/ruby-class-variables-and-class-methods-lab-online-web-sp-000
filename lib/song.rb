@@ -30,7 +30,7 @@ class Song
   
   def self.genre_count
     Song.genres.each do |genre|
-      @genre_total = { :genre => @@genres.count(genre) }
+      @genre_total = { self => @@genres.count(genre) }
       binding.pry
       @genre_totals << @genre_total
     end
