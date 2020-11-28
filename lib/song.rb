@@ -16,18 +16,5 @@ Class Song
     @@artists << artist
     @@genres << genre
   end
-  
-  def self.count
-    @@count
-  end
-  
-  def self.artists
-    @@artists
-    @@artists.uniq
-  end
-  
-  def self.genres
-    @@genres      
-    @@genres.uniq
-  end
+
 end
